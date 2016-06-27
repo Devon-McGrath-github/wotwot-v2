@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 export default (props) => {
   return (
@@ -9,12 +10,12 @@ export default (props) => {
           return (
             <li key={thing.id}>
               {thing.name} {' '}
-              <a href="#" onClick={() => props.showDetails(thing.id)}>(show details)</a>
+              <Link to={`/details/${thing.id}`}>(show details)</Link>
             </li>
           )
         })}
       </ul>
-      <a href="#" onClick={props.addThing}>Add random thing</a>
+      <a href="/" onClick={props.addThing}>Add random thing</a>
     </div>
   )
 }

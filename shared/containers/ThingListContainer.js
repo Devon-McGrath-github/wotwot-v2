@@ -11,10 +11,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    showDetails: (id) => {
-      dispatch(showDetails(id))
-    },
-    addThing: () => {
+    addThing: (e) => {
+      e.preventDefault()
       dispatch(addThing())
     }
   }

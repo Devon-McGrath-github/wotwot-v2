@@ -13,8 +13,6 @@ const router = express.Router()
 let store = createStore(reducer)
 
 router.get('/*', (req, res) => {
-  debugger
-  console.log(req.url)
   const location = { location: req.url }
   match({ routes, location }, (err, redirectLocation, renderProps) => {
     if (err) return res.sendStatus(500)
@@ -22,7 +20,6 @@ router.get('/*', (req, res) => {
     if (redirectLocation) return res.redirect(redirectLocation.pathname)
 
     const result = renderResult(renderProps, store.getState())
-    console.log(result)
     res.send(result)
   })
 })

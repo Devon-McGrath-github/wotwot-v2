@@ -15,17 +15,8 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    hideDetails: () => {
-      dispatch(hideDetails())
-    }
-  }
-}
-
 const ThingDetailContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps
 )(ThingDetail)
 
 export default ThingDetailContainer
