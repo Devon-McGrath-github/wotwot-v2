@@ -1,6 +1,6 @@
 import test from 'ava'
 
-import { showDetails, SHOW_DETAILS, hideDetails, HIDE_DETAILS, addThing, ADD_THING } from '../client/actions'
+import { showDetails, SHOW_DETAILS, hideDetails, HIDE_DETAILS, addThing, ADD_THING } from '../shared/actions'
 
 test('showDetails returns and action that includes the id', t => {
   const id = 44

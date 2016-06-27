@@ -1,7 +1,7 @@
 import test from 'ava'
 
-import { showDetails, SHOW_DETAILS, hideDetails, HIDE_DETAILS, addThing, ADD_THING } from '../client/actions'
-import reducer from '../client/reducer'
+import { showDetails, SHOW_DETAILS, hideDetails, HIDE_DETAILS, addThing, ADD_THING } from '../shared/actions'
+import reducer from '../shared/reducer'
 
 test('Initial state meets expectations', t => {
   const action = { type: '@@INIT' }
