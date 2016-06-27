@@ -1,8 +1,8 @@
-module.exports = {
+export default {
   getThings: getThings
 }
 
-var things = [{
+let things = [{
   id: 1,
   name: 'Red thing'
 }, {
