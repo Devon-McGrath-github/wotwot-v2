@@ -1,7 +1,7 @@
 {
-  "name": "universal-sample",
+  "name": "WotWot V2",
   "version": "1.0.0",
-  "description": "A sample universal React/React starter",
+  "description": "A clean restart for WotWot",
   "main": "server/server.js",
   "scripts": {
     "build": "webpack",
