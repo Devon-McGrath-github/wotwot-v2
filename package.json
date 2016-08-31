@@ -1,5 +1,5 @@
 {
-  "name": "WotWot V2",
+  "name": "wotwot-v2",
   "version": "1.0.0",
   "description": "A clean restart for WotWot",
   "main": "server/server.js",

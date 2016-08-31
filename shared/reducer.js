@@ -5,7 +5,8 @@ const INITIAL_STATE = {
   things: [{
     id: 1,
     name: 'Red thing'
-  }]
+  }],
+  auth: {}
 }
 
 export default (state = INITIAL_STATE , action) => {
