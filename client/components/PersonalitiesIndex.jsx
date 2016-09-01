@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 export default (props) => {
   return (
     <div>
-      <h2>PersonalitiesIndex</h2>
+      <h2>PersonalitiesIndex component (please ignore)</h2>
 
     </div>
   )
