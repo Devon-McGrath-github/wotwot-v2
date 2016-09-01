@@ -10,6 +10,14 @@ export default (props) => {
         <li>something 2</li>
         <li>something 2 3</li>
       </ul>
+      <div className="TooBeModularized">
+        <div className="ContentBlock1">
+          <h2>Content Block</h2>
+        </div>
+        <div className="ContentBlock2">
+          <h2>Content Block 2</h2>
+        </div>
+      </div>
     </div>
   )
 }
