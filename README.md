@@ -9,6 +9,7 @@ A project currently in development
 * npm install
 * execute command "npm run build"
 * execute command "npm run serve"
+* navigate to localhost:8080
 
 
 
