@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import ThingList from '../components/ThingList'
+import PersonalitiesIndex from '../components/PersonalitiesIndex'
 import { showDetails, addThing } from '../actions'
 
 const mapStateToProps = (state) => {
@@ -18,9 +18,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const ThingListContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ThingList)
-
-export default ThingListContainer
+export default connect(mapStateToProps, mapDispatchToProps)(PersonalitiesIndex)
