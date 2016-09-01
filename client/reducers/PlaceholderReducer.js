@@ -1,4 +1,4 @@
-import { SHOW_DETAILS, HIDE_DETAILS, ADD_THING } from './actions'
+import { SHOW_DETAILS, HIDE_DETAILS, ADD_THING } from '../actions'
 
 const INITIAL_STATE = {
   selectedThing: null,

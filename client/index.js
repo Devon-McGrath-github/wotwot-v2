@@ -10,8 +10,7 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 // import actions from './actions/...........'
 import actions from './actions'
 
-// import appReducer from './reducers/combineReducers'
-import appReducer from './reducer'
+import appReducer from './reducers/combineReducers'
 
 import App from './components/App'
 import PersonalitiesIndex from './containers/PersonalitiesIndexContainer'
