@@ -1,8 +1,10 @@
 import React from 'react'
 
+import Nav from '../containers/NavContainer'
+
 export default (props) => (
   <div id="app-view">
-    <h1>Things</h1>
+    <Nav />
     {props.children}
   </div>
 )
