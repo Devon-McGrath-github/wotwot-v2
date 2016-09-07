@@ -2,12 +2,15 @@ html, body, #app, #root-div {
   padding: 0;
   margin: 0;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
 
 h5 {
-  color: white; }
+  color: white;
+}
 
 /* -- Nav styling -- */
+
 .nav_container {
   display: inline-block;
   float: left;
@@ -15,40 +18,43 @@ h5 {
   height: 100%;
   width: 15%;
   background-color: black;
-  text-align: center; }
-
-.logo {
-  margin-top: 3%; }
+  text-align: center;
+}
 
 .menu_simple {
-  width: 100%; }
+  width: 100%;
+}
 
 .menu_simple ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
 .menu_simple ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 10.5px 11px;
-  background-color: #005555;
-  display: block; }
+    text-decoration: none;
+    color: white;
+    padding: 10.5px 11px;
+    background-color: #005555;
+    display:block;
+}
 
 .menu_simple ul li a:visited {
-  color: white; }
+    color: white;
+}
 
 .menu_simple ul li a:hover, .menu_simple ul li .current {
-  color: white;
-  background-color: #5FD367; }
+    color: white;
+    background-color: #5FD367;
+}
 
 /* -- personalities Index styling -- */
-.content-container {
+
+.personalitiesIndex-container {
   width: 85%;
   height: 100%;
   display: inline-block;
   float: left;
   margin: 0;
-  background-color: green; }
-
-/*# sourceMappingURL=main.css.map */
+  background-color: red;
+}

@@ -5,6 +5,8 @@ var path = require('path')
 var webpack = require('webpack')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 
+
+
 var PATHS = {
   build: path.join(__dirname, 'server', 'static'),
   client: path.join(__dirname, 'client'),
@@ -22,7 +24,11 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx?$/, loader: 'babel-loader', include: PATHS.client, exclude: /node_modules/ },
-      { test: /\.json$/, loader: 'json-loader' }
+      { test: /\.json$/, loader: 'json-loader' },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      }
     ]
   },
   node: {

@@ -3,7 +3,11 @@ import {Link} from 'react-router'
 
 export default (props) => {
   return (
-    <div className="nav_container">
+    <div>
+      <div className="nav_header">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=8&txt=60%C3%9760&w=60&h=60" alt="WotWot_logo" className="logo"></img>
+        <h5 id="logo_text">WotWot</h5>
+      </div>
       <div className="menu_simple">
         <ul>
           <li><a href="#">Link 1</a></li>
