@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
 import PersonalitiesIndex from '../components/pages/PersonalitiesIndex'
-import { showDetails, addThing } from '../actions'
+import { showDetails, addThing } from '../actions/actions'
 
 const mapStateToProps = (state) => {
   return {

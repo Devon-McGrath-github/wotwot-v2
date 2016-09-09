@@ -9,7 +9,7 @@ export default (props) => {
           <li><p className="nav-sub-header"></p></li>
           <li className="nav-sub-link"><Link to="/">Link 1</Link></li>
           <li className="nav-sub-link"><Link to="/">Link 2</Link></li>
-          <li className="nav-sub-link"><Link to="/">Link 3</Link></li>
+          <li className="nav-sub-link">Link 3</li>
         </ul>
       </div>
     </div>

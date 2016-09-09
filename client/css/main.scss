@@ -1,3 +1,6 @@
+// TODO: make sure SASS script (serve in package.json) is the best way to compile when developing. Doesn't seem like it.
+
+
 @import 'footer';
 
 html, body, #app, #root-div {
@@ -7,8 +10,28 @@ html, body, #app, #root-div {
   width: 100%;
 }
 
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
 h5, h3 {
-  color: white;
+  color: black;
+}
+
+/* -- App.jsx Styling -- */
+
+.content-container {
+  width: 85%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  background-color: rgb(207, 207, 207);
+  overflow: scroll;
+  
 }
 
 /* -- component ids -- */
@@ -25,8 +48,9 @@ h5, h3 {
   margin: 0;
   height: 100%;
   width: 15%;
-  background-color: black;
   text-align: center;
+  background-color: white;
+  // border: 1px solid rgb(207, 207, 207);
 }
 
 .logo {
@@ -47,26 +71,20 @@ h5, h3 {
 
   ul li a {
     text-decoration: none;
-    color: white;
     padding: 10.5px 11px;
-    background-color: #005555;
     display:block;
   }
 
   ul li a:visited {
-    color: white;
   }
 
-  ul li a:hover, .menu_simple ul li .current {
-      color: white;
-      background-color: #5FD367;
+  a:hover {
   }
 }
 
 // sub nav styling
 .nav-sub {
   display: block;
-  background-color: rgba(211, 211, 211, 0.5);
 }
 
 .nav-sub-header {
@@ -74,19 +92,21 @@ h5, h3 {
 }
 
 .nav-sub-content {
-  margin-top: 2%;
-  
+  margin: 0%;
+  // border: 1px solid rgb(207, 207, 207);
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
   }
 
   li {
     height: 100%;
     float: left;
+    background-color: #333;
   }
 
   .nav-sub-link {
@@ -112,17 +132,17 @@ h5, h3 {
 
 /* -- personalities Index styling -- */
 
-.content-container {
-  width: 85%;
-  height: 100%;
-  display: inline-block;
-  float: left;
-  margin: 0;
-  background-color: green;
+.personalities-list-container {
+  width: 95%;
+  margin: 2.5%;
+  background-color: white;
 }
 
-/* -- personalities-list-container styling -- */
-
-.personalities-list-container {
-  background-color: rgba(211, 211, 211, 0.5);
+.personality-card {
+  display: inline-block;
+  width: 29%;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgba(200, 200, 200, 0.5);
+  // border: 3px solid #73AD21;
 }

@@ -7,10 +7,10 @@ export default (props) => {
       <div className="footer_simple">
         <ul>
           <h3>footer begins here</h3>
-          <li><Link to="/">Help</Link></li>
-          <li><Link to="/">Feedback</Link></li>
-          <li><Link to="/">Contact Us</Link></li>
-          <li><Link to="/">Logout</Link></li>
+          <li><Link to="help">Help</Link></li>
+          <li><Link to="feedback">Feedback</Link></li>
+          <li><Link to="contact-us">Contact Us</Link></li>
+          <li><Link to="logout">Logout</Link></li>
         </ul>
       </div>
     </div>
