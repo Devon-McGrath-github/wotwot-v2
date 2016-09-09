@@ -13,10 +13,12 @@ html, body, #app, #root-div {
 h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 h5, h3 {
-  color: white;
+  color: black;
 }
 
 /* -- App.jsx Styling -- */
@@ -27,7 +29,7 @@ h5, h3 {
   display: inline-block;
   float: left;
   margin: 0;
-  background-color: green;
+  background-color: rgb(207, 207, 207);
   overflow: scroll;
 }
 
@@ -45,8 +47,9 @@ h5, h3 {
   margin: 0;
   height: 100%;
   width: 15%;
-  background-color: black;
   text-align: center;
+  background-color: white;
+  // border: 1px solid rgb(207, 207, 207);
 }
 
 .logo {
@@ -67,26 +70,20 @@ h5, h3 {
 
   ul li a {
     text-decoration: none;
-    color: white;
     padding: 10.5px 11px;
-    background-color: #005555;
     display:block;
   }
 
   ul li a:visited {
-    color: white;
   }
 
-  ul li a:hover, .menu_simple ul li .current {
-      color: white;
-      background-color: #5FD367;
+  a:hover {
   }
 }
 
 // sub nav styling
 .nav-sub {
   display: block;
-  background-color: rgba(211, 211, 211, 0.5);
 }
 
 .nav-sub-header {
@@ -94,19 +91,21 @@ h5, h3 {
 }
 
 .nav-sub-content {
-  margin-top: 2%;
+  margin: 0%;
+  // border: 1px solid rgb(207, 207, 207);
 
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
   }
 
   li {
     height: 100%;
     float: left;
+    background-color: #333;
   }
 
   .nav-sub-link {
@@ -135,7 +134,7 @@ h5, h3 {
 .personalities-list-container {
   width: 95%;
   margin: 2.5%;
-  background-color: rgba(211, 211, 211, 0.5);
+  background-color: white;
 }
 
 .personality-card {
