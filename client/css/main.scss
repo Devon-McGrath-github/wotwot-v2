@@ -1,3 +1,6 @@
+// TODO: make sure SASS script (serve in package.json) is the best way to compile when developing. Doesn't seem like it.
+
+
 @import 'footer';
 
 html, body, #app, #root-div {
@@ -7,8 +10,25 @@ html, body, #app, #root-div {
   width: 100%;
 }
 
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
 h5, h3 {
   color: white;
+}
+
+/* -- App.jsx Styling -- */
+
+.content-container {
+  width: 85%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  background-color: green;
+  overflow: scroll;
 }
 
 /* -- component ids -- */
@@ -75,7 +95,7 @@ h5, h3 {
 
 .nav-sub-content {
   margin-top: 2%;
-  
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -112,17 +132,17 @@ h5, h3 {
 
 /* -- personalities Index styling -- */
 
-.content-container {
-  width: 85%;
-  height: 100%;
-  display: inline-block;
-  float: left;
-  margin: 0;
-  background-color: green;
+.personalities-list-container {
+  width: 95%;
+  margin: 2.5%;
+  background-color: rgba(211, 211, 211, 0.5);
 }
 
-/* -- personalities-list-container styling -- */
-
-.personalities-list-container {
-  background-color: rgba(211, 211, 211, 0.5);
+.personality-card {
+  display: inline-block;
+  width: 29%;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgba(200, 200, 200, 0.5);
+  // border: 3px solid #73AD21;
 }
