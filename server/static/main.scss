@@ -1,3 +1,5 @@
+@import 'footer';
+
 html, body, #app, #root-div {
   padding: 0;
   margin: 0;
@@ -5,8 +7,14 @@ html, body, #app, #root-div {
   width: 100%;
 }
 
-h5 {
+h5, h3 {
   color: white;
+}
+
+/* -- component ids -- */
+#nav_component {
+  height: 100%;
+  overflow: scroll;
 }
 
 /* -- Nav styling -- */
@@ -21,40 +29,49 @@ h5 {
   text-align: center;
 }
 
-.menu_simple {
-  width: 100%;
+.logo {
+  margin-top: 3%;
 }
 
-.menu_simple ul {
+.menu_simple {
+  width: 100%;
+  ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
+  }
 
-.menu_simple ul li a {
+  ul li a {
     text-decoration: none;
     color: white;
     padding: 10.5px 11px;
     background-color: #005555;
     display:block;
+  }
+
+  ul li a:visited {
+    color: white;
+  }
+
+  ul li a:hover, .menu_simple ul li .current {
+      color: white;
+      background-color: #5FD367;
+  }
 }
 
-.menu_simple ul li a:visited {
-    color: white;
-}
-
-.menu_simple ul li a:hover, .menu_simple ul li .current {
-    color: white;
-    background-color: #5FD367;
+// sub nav styling
+.nav_sub {
+  display: inline;
+  background-color: rgba(211, 211, 211, 0.5);
 }
 
 /* -- personalities Index styling -- */
 
-.personalitiesIndex-container {
+.content-container {
   width: 85%;
   height: 100%;
   display: inline-block;
   float: left;
   margin: 0;
-  background-color: red;
+  background-color: green;
 }

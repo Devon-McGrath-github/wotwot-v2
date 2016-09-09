@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import PersonalitiesIndex from '../components/PersonalitiesIndex'
+import PersonalitiesIndex from '../components/pages/PersonalitiesIndex'
 import { showDetails, addThing } from '../actions'
 
 const mapStateToProps = (state) => {
@@ -11,10 +11,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addThing: (e) => {
-      e.preventDefault()
-      dispatch(addThing())
-    }
+
   }
 }
 

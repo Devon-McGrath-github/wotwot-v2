@@ -62,8 +62,7 @@ h5, h3 {
     background-color: #5FD367; }
 
 .nav_sub {
-  display: block;
-  background-color: red; }
+  display: inline; }
 
 /* -- personalities Index styling -- */
 .content-container {
