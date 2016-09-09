@@ -10,13 +10,25 @@ import { createStore, applyMiddleware, compose } from 'redux'
 import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
 // import actions from './actions/...........'
-import actions from './actions'
+import actions from './actions/actions'
 
 import appReducer from './reducers/combineReducers'
 
 import App from './components/App'
 import PersonalitiesIndex from './containers/PersonalitiesIndexContainer'
-import ThingDetail from './containers/ThingDetailContainer'
+
+import Dashboard from './components/pages/Dashboard'
+import Campaign from './components/pages/Campaign'
+import UserAccounts from './components/pages/UserAccounts'
+import MediaLibrary from './components/pages/MediaLibrary'
+import Manufacturers from './components/pages/Manufacturers'
+import Products from './components/pages/Products'
+import Tags from './components/pages/Tags'
+import Personality from './components/pages/Personality'
+
+import Help from './components/pages/Help'
+import Feedback from './components/pages/Feedback'
+import ContactUs from './components/pages/ContactUs'
 
 let store = createStore(
   appReducer, compose(
@@ -32,7 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
       <Router history={history}>
         <Route path="/" component={App}>
           <IndexRoute component={PersonalitiesIndex} />
-          <Route name="detail" component={ThingDetail} path="details/:id" />
+          <Route component={Dashboard} path="dashboard" />
+          <Route component={Campaign} path="campaign" />
+          <Route component={UserAccounts} path="user-accounts" />
+          <Route component={MediaLibrary} path="media-library" />
+          <Route component={Manufacturers} path="manufacturers" />
+          <Route component={Products} path="products" />
+          <Route component={Tags} path="tags" />
+          <Route component={Personality} path="personality" />
+          <Route component={Help} path="help" />
+          <Route component={Feedback} path="feedback" />
+          <Route component={ContactUs} path="contact-us" />
         </Route>
       </Router>
     </Provider>,
