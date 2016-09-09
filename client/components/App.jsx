@@ -4,7 +4,11 @@ import Nav from '../containers/NavContainer'
 
 export default (props) => (
   <div id="root-div">
-    <Nav />
-    {props.children}
+    <div className="nav_container">
+      <Nav />
+    </div>
+    <div className="content-container">
+      {props.children}
+    </div>
   </div>
 )

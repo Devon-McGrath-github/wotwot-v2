@@ -3,10 +3,15 @@ import {Link} from 'react-router'
 
 export default (props) => {
   return (
-    <div className="Nav-Sub">
-      <h2>Content Block titles and stuff</h2>
-      <h3>inline</h3>
-      <h3>content</h3>
+    <div className="nav-sub">
+      <div className="nav-sub-content">
+        <ul>
+          <li><p className="nav-sub-header"></p></li>
+          <li className="nav-sub-link"><Link to="/">Link 1</Link></li>
+          <li className="nav-sub-link"><Link to="/">Link 2</Link></li>
+          <li className="nav-sub-link"><Link to="/">Link 3</Link></li>
+        </ul>
+      </div>
     </div>
   )
 }
