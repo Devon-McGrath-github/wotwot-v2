@@ -8,6 +8,11 @@ export default (props) => {
       <SubNav />
       <div className="">
         <h1>Personality</h1>
+
+        <div className="">
+
+        </div>
+
       </div>
     </div>
   )
