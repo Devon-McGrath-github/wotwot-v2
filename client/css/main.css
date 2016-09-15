@@ -96,6 +96,7 @@ h5, h3 {
   .nav-sub-content .active {
     background-color: purple; }
 
+/* -- PAGE CONTENT MIXIN -- */
 /* -- personalities Index styling -- */
 .personalities-list-container {
   width: 95%;
@@ -108,5 +109,10 @@ h5, h3 {
   margin: 1%;
   padding: 1%;
   background-color: rgba(200, 200, 200, 0.5); }
+
+.campaign-content {
+  width: 95%;
+  margin: 2.5%;
+  background-color: white; }
 
 /*# sourceMappingURL=main.css.map */
