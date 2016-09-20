@@ -1,3 +1,4 @@
+// this creates the link so sass stylesheets will be bundled by webpack
 require('./css/main.scss')
 
 import React from 'react'
@@ -11,6 +12,7 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
 // import actions from './actions/...........'
 import actions from './actions/actions'
+import { getPersonalities } from './actions/getPersonalitiesAction'
 
 import appReducer from './reducers/combineReducers'
 
@@ -35,6 +37,9 @@ let store = createStore(
     applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : f => f
   ))
+
+// preload store while index page is loading
+store.dispatch(getPersonalities())
 
 const history = syncHistoryWithStore(hashHistory, store)
 

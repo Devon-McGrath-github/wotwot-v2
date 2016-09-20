@@ -1,5 +1,7 @@
 import { connect } from 'react-redux'
 
+import getPersonalities from '../actions/getPersonalitiesAction'
+
 import Nav from '../components/Nav'
 
 const mapStateToProps = (state) => {
@@ -10,7 +12,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    // logout dispatcher
+    getPersonalities: () => {
+      dispatch(getPersonalities())
+    }
   }
 }
 

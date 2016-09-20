@@ -4,13 +4,14 @@ import SubNav from '../../containers/SubNavContainer'
 
 export default (props) => {
   return (
-    <div className="personality-content">
+    <div className="">
       <SubNav />
-      <div className="">
+      <div className="personality-content">
         <h1>Personality</h1>
 
         <div className="">
-
+          <h2>Add Personality</h2>
+          
         </div>
 
       </div>
