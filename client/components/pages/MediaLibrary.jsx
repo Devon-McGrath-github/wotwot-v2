@@ -13,11 +13,10 @@ export default (props) => {
       <div className="mediaLibrary-content">
         <h1>Media Library</h1>
         {personalities.map(function (personality) {
-            return (
-              <p>{personality.what}</p>
-            )
-            }
-          )}
+          return (
+            <p>{personality.what}</p>
+          )
+        })}
       </div>
     </div>
   )
