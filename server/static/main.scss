@@ -1,0 +1,165 @@
+// TODO: make sure SASS script (serve in package.json) is the best way to compile when developing. Doesn't seem like it.
+
+@import 'footer';
+
+html, body, #app, #root-div {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+h5, h3 {
+  color: black;
+}
+
+/* -- App.jsx Styling -- */
+
+.content-container {
+  width: 85%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  background-color: rgb(207, 207, 207);
+  overflow: scroll;
+
+}
+
+/* -- component ids -- */
+#nav_component {
+  height: 100%;
+  overflow: scroll;
+}
+
+/* -- Nav styling -- */
+
+.nav_container {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  height: 100%;
+  width: 15%;
+  text-align: center;
+  background-color: white;
+  // border: 1px solid rgb(207, 207, 207);
+}
+
+.logo {
+  margin-top: 3%;
+}
+
+#logo_text {
+  color: purple;
+}
+
+.menu_simple {
+  width: 100%;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    padding: 10.5px 11px;
+    display:block;
+  }
+
+  ul li a:visited {
+  }
+
+  a:hover {
+  }
+}
+
+// sub nav styling
+.nav-sub {
+  display: block;
+}
+
+.nav-sub-header {
+
+}
+
+.nav-sub-content {
+  margin: 0%;
+  // border: 1px solid rgb(207, 207, 207);
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  li {
+    height: 100%;
+    float: left;
+    background-color: #333;
+  }
+
+  .nav-sub-link {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: green;
+  }
+
+  .active {
+    background-color: purple;
+  }
+}
+
+/* -- PAGE CONTENT MIXIN -- */
+
+@mixin container-styling() {
+  width: 95%;
+  margin: 2.5%;
+  background-color: white;
+}
+
+/* -- personalities Index styling -- */
+
+.personalities-list-container {
+  @include container-styling();
+}
+
+.personality-card {
+  display: inline-block;
+  width: 29%;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgba(200, 200, 200, 0.5);
+  // border: 3px solid #73AD21;
+}
+
+// Campaign Styling
+
+.campaign-content {
+  @include container-styling();
+}
+
+// Personality Styling
+
+.personality-content {
+  @include container-styling();
+}
