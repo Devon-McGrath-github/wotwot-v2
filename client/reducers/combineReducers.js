@@ -2,11 +2,13 @@ import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 
 // import auth from './authReducer'
-import placeholder from './PlaceholderReducer'
+import personalities from './PersonalitiesReducer'
+import bananaNeedsRemoving from './testReducer.js'
 
 const reducers = {
   routing: routerReducer,
-  placeholder: placeholder
+  personalities: personalities,
+  bananaNeedsRemoving: bananaNeedsRemoving
 }
 
 const appReducer = combineReducers(reducers)

@@ -1,3 +1,4 @@
+// this creates the link so sass stylesheets will be bundled by webpack
 require('./css/main.scss')
 
 import React from 'react'
@@ -11,6 +12,7 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
 // import actions from './actions/...........'
 import actions from './actions/actions'
+import { getPersonalities } from './actions/getPersonalitiesAction'
 
 import appReducer from './reducers/combineReducers'
 
@@ -20,7 +22,11 @@ import PersonalitiesIndex from './containers/PersonalitiesIndexContainer'
 import Dashboard from './components/pages/Dashboard'
 import Campaign from './components/pages/Campaign'
 import UserAccounts from './components/pages/UserAccounts'
-import MediaLibrary from './components/pages/MediaLibrary'
+
+// TODO: changed component page, to a container 
+import MediaLibrary from './containers/MediaLibraryContainer'
+//
+
 import Manufacturers from './components/pages/Manufacturers'
 import Products from './components/pages/Products'
 import Tags from './components/pages/Tags'
@@ -35,6 +41,9 @@ let store = createStore(
     applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : f => f
   ))
+
+// preload store while index page is loading
+store.dispatch(getPersonalities())
 
 const history = syncHistoryWithStore(hashHistory, store)
 
