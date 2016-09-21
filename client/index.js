@@ -22,7 +22,11 @@ import PersonalitiesIndex from './containers/PersonalitiesIndexContainer'
 import Dashboard from './components/pages/Dashboard'
 import Campaign from './components/pages/Campaign'
 import UserAccounts from './components/pages/UserAccounts'
-import MediaLibrary from './components/pages/MediaLibrary'
+
+// TODO: changed component page, to a container 
+import MediaLibrary from './containers/MediaLibraryContainer'
+//
+
 import Manufacturers from './components/pages/Manufacturers'
 import Products from './components/pages/Products'
 import Tags from './components/pages/Tags'

@@ -163,3 +163,9 @@ h5, h3 {
 .personality-content {
   @include container-styling();
 }
+
+//Media Library Styling
+
+.mediaLibrary-content {
+  @include container-styling();
+}

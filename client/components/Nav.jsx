@@ -13,7 +13,6 @@ export default (props) => {
       <div className="menu_simple">
         <ul>
           <h3>Analyze</h3>
-          <button onClick={() => props.getPersonalities()}>PLACEHOLDER STORE THINGY</button>
           <li><Link to="dashboard">Dashboard</Link></li>
           <h3>Create</h3>
           <li><Link to="campaign">Campaign</Link></li>
