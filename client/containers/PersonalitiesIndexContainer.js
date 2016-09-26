@@ -5,7 +5,7 @@ import { showDetails, addThing } from '../actions/actions'
 
 const mapStateToProps = (state) => {
   return {
-    things: state.things
+    personalities: state.personalities
   }
 }
 
