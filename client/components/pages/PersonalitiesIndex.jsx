@@ -6,12 +6,8 @@ import SubNav from '../../containers/SubNavContainer'
 import PersonalityCard from '../PersonalityCard'
 
 export default (props) => {
-  console.log('props.personalities', props.personalities)
+  // turns object of objects into an array of objects
   const personalities = R.values(props.personalities)
-  console.log('personalities', personalities.map(function (personality){return (console.log('success'))}));
-  console.log('array length', personalities.length);
-
-  let personalityCards = []
 
 
   return (
@@ -20,15 +16,19 @@ export default (props) => {
       <div className="personalities-list-container">
         <h2>PersonalitiesIndex component</h2>
         <div className="personalities-list">
-          {/* these will be generated from the database */}
-          <div>
-          {personalities.map(function (personality){
-            return (
-              <p>{personality.title}</p>
-            )
-          })}
-          </div>
 
+          <div>
+            {personalities.map(function (personality){
+              {/* TODO: need to make this a component*/}
+              return (
+                <div key={personality.personalityId} className="personality-card">
+                  <img src={personality.images}></img>
+                  <h3>{personality.title}</h3>
+                  <p>{personality.description}</p>
+                </div>
+              )
+            })}
+          </div>
 
         </div>
       </div>
