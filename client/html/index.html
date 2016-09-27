@@ -5,14 +5,27 @@
 
   <title>WotWot</title>
 
+  <!-- stylesheets -->
   <link rel="stylesheet" href="./main.css">
+
+  <!-- Firebase script -->
   <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+
+  <!-- Firebase auth scripts -->
+  <script src="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.css" />
 
 </head>
 <body>
+  <!-- index.js listening for id="app" -->
   <div id="app">
     <p> loading WotWot </p>
   </div>
+
+  <div id="sign-in-status"></div>
+
+  <!-- minified code bundle -->
+  <!-- includes js, css etc -->
   <script src="bundle.js"></script>
 </body>
 </html>

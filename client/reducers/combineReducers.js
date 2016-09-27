@@ -1,12 +1,13 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 
-// import auth from './authReducer'
+import auth from './authReducer'
 import personalities from './PersonalitiesReducer'
 import bananaNeedsRemoving from './testReducer.js'
 
 const reducers = {
   routing: routerReducer,
+  auth: auth,
   personalities: personalities,
   bananaNeedsRemoving: bananaNeedsRemoving
 }
