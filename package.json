@@ -5,7 +5,8 @@
   "main": "server/server.js",
   "scripts": {
     "dev-server": "webpack-dev-server",
-    "serve": "webpack-dev-server --hot --inline && sass --watch client/css:client/css",
+    "serve": "webpack-dev-server --hot --inline",
+    "sass-watch": "sass --watch client/css:client/css",
     "build": "webpack && npm run transpile",
     "start": "node server/lib/server",
     "server": "node-inspector --web-port 5858 & npm run transpile && node-dev --debug server/lib/server",
