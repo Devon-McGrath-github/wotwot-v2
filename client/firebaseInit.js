@@ -9,3 +9,33 @@ export const getPersonalitiesFromDB = (callback) => {
     callback(R.values(snapshot.val()))
   })
 }
+
+
+// export const writeNewActivityToDB = (payload) => {
+//   const newActivityKey = firebase.database().ref().child('activities/').push().key
+//   const newActivity = {
+//     title: payload.title,
+//     subtitle: payload.subtitle,
+//     description: payload.description,
+//     activityStart: payload.activityStart,
+//     activityEnd: payload.activityEnd,
+//     formattedAddress: payload.formattedAddress,
+//     numberRequired: payload.numberRequired,
+//     tasks: payload.tasks,
+//     activityId: newActivityKey,
+//     activityCreatorId: payload.uid,
+//     images: payload.images,
+//     attendeeIds: payload.attendeeIds
+//   }
+//   const updates = {};
+//   updates['activities/' + newActivityKey] = newActivity;
+//   return firebase.database().ref().update(updates)
+// }
+
+
+// export const deleteActivityFromDB = (activity) => {
+//   return firebase
+//     .database()
+//     .ref(`personalities/${personality.personalityId}`)
+//     .remove()
+// }
