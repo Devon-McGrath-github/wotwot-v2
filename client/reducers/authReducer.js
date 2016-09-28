@@ -1,4 +1,4 @@
-import C from '../components/authConstants';
+import C from '../constants/authConstants';
 
 const initialState = {
 	username: null,
