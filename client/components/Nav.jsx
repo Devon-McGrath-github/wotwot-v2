@@ -14,7 +14,7 @@ export default (props) => {
         <ul>
           <h3>Analyze</h3>
           <li><Link to="dashboard">Dashboard</Link></li>
-          <a href="/login.html" className="item"><p>Create Event</p></a>
+          <a href="/login.html" className="item"><p>Login</p></a>
           <h3>Create</h3>
           <li><Link to="campaign">Campaign</Link></li>
           <h3>Manage</h3>
